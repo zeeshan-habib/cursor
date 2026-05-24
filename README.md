@@ -47,11 +47,14 @@ Open this repo in Cursor → **New Agent chat** → invoke by skill name:
 **Install scheduled agents (one-time):**
 
 ```bash
+mkdir -p ~/Library/LaunchAgents
 cp agents/portfolio-agent/com.portfolio.surveillance.plist ~/Library/LaunchAgents/
 cp agents/spousal-pr-agent/com.spousal-pr.weekly.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.portfolio.surveillance.plist
-launchctl load ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.portfolio.surveillance.plist
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
 ```
+
+Run from repo root (`cursor/`). If `~/Library/LaunchAgents` doesn't exist, create it first with `mkdir -p`.
 
 Test manually: `FORCE_RUN=1 bash agents/portfolio-agent/run.sh`
 
