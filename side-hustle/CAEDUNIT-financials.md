@@ -101,38 +101,93 @@ Zee transferred a total of $770 into the corporation over three fiscal years. Th
 - **NDA check (MaintainX):** Proprietary property clause covers only work "relating to the Business of the Company" (industrial CMMS). Homebase = SMB workforce management. Unrelated — confirmed clean.
 - **Billing:** Personal income for now. Route through CAEDUNIT once T2s are filed and corp is active.
 
+### MacBook Air M5 Purchase Tracker
+
+**Status:** Waiting for deal — do not buy at Apple.ca list price unless urgent.
+
+| Field | Detail |
+|---|---|
+| **Target config** | 13-inch MacBook Air M5, 16 GB RAM, 512 GB SSD |
+| **Replacing** | Personal M1 MacBook Air (2020) — functional, not urgent |
+| **Work machine** | M4 MacBook Air (MaintainX) — separate; no upgrade needed |
+| **Target pre-tax price** | **≤ $1,399** ($100+ off list) |
+| **List price (Apple.ca)** | $1,499 + 13% HST = **~$1,694** total |
+| **Hard deadline** | **July 31, 2026** — reassess if no deal by then |
+| **Watch window** | Late June – mid-July (back-to-school, Amazon Prime Day) |
+
+**Where to buy (in order):**
+
+| Priority | Retailer | Card | Why |
+|---|---|---|---|
+| 1 | **Amazon.ca** (when in stock, $100+ off) | **MBNA Amazon Mastercard** (~2.5% cashback) | ~$100 discount + ~$35 cashback ≈ **$135 saved** vs Apple.ca |
+| 2 | **Best Buy / Staples** (if matching Amazon pricing) | MBNA Amazon or Amex Simply Cash | Same logic — only if ≤ $1,399 pre-tax |
+| 3 | **Apple.ca** (fallback only) | **Amex Simply Cash** (2% cashback) | No retailer discount; ~$34 back |
+
+**Cards to avoid for this purchase:**
+
+| Card | Reason |
+|---|---|
+| Wealthsimple VIP Infinite Privilege | $6K limit; $3K rent + ~$1K used = ~$2K available. A ~$1,700 charge spikes utilization and hurts TransUnion. |
+| RBC Avion / WestJet / Simplii | ≤1.5% — worse than Simply Cash or MBNA |
+| Amex Cobalt | 1x MR on electronics unless welcome-bonus month ($750 spend → 1,250 MR bonus still in year 1) |
+
+**Action items:**
+
+- [ ] Set price/stock alerts on Amazon.ca and Best Buy for M5 16GB/512
+- [ ] Buy same day when ≤ $1,399 pre-tax and in stock
+- [ ] Save receipt + confirmation email to 2026 tax folder
+- [ ] Write business-use memo on purchase date (see tax section below)
+- [ ] Update this tracker with actual purchase date, price, and card used
+
+---
+
 ### Tax Treatment (Personal T1 — 2026 Tax Year)
 
 **MacBook Air Upgrade — Business Equipment Deduction**
 
+Purchase must occur in **calendar year 2026** to offset 2026 T4A income on T2125 (filed spring 2027). No rush — any 2026 purchase date works.
+
+**Estimated at Apple list price ($1,499 pre-tax):**
+
 | Item | Detail |
 |---|---|
-| Purchase price | $850.00 CAD (before tax) |
-| Ontario HST (13%) | $110.50 |
-| **Total capital cost** | **$960.50 CAD** |
-| Business use % | 80% (MacBook Pro covers personal use) |
-| **Deductible amount** | **~$768.00** |
+| Pre-tax cost | ~$1,499 CAD (update with actual receipt) |
+| Ontario HST (13%) | ~$195 |
+| **Total capital cost** | **~$1,694 CAD** |
 | CCA Class | Class 50 (computers, 55% rate) |
 | Filing method | Immediate expensing election — full business-use portion in year 1 |
 
-**Net income calculation:**
+**Business use % — claim honestly:**
+
+Dedicated M4 Air covers MaintainX work. This M5 replaces personal M1. CRA expects **actual use**, not maximum allocation.
+
+| Scenario | Business use % | Deductible (on $1,499) | Tax savings (~32%) |
+|---|---|---|---|
+| Mostly personal; occasional Homebase | **20–30%** | ~$300–450 | ~$96–144 |
+| Split personal + regular Homebase consulting | **40–50%** | ~$600–750 | ~$192–240 |
+| Primarily Homebase machine (aggressive — document heavily) | **80%** | ~$1,199 | ~$384 |
+
+**Net income illustration (at 30% business use, list price, ~$1,300 T4A income):**
 
 | Item | Amount |
 |---|---|
 | Gross T4A income | $1,300.00 |
-| MacBook Air deduction | -$768.00 |
-| Net self-employment income | ~$532.00 |
-| Estimated tax + CPP (~32%) | ~$170.00 |
-| **Effective after-tax laptop cost** | **~$192–217** |
+| MacBook Air deduction (30%) | -$450.00 |
+| Net self-employment income | ~$850.00 |
+| Estimated tax + CPP (~32%) | ~$272.00 |
+| MBNA cashback (~2.5% on ~$1,582 Amazon) | -~$40.00 |
+| **Effective after-tax laptop cost** | **~$1,382** |
+
+> Tax break is a sweetener, not the primary reason to buy. Do not inflate business % beyond defensible actual use.
 
 **Filing notes:**
 - File T2125 (Statement of Business or Professional Activities) with 2026 T1 return
 - Claim laptop under CCA Class 50 with immediate expensing (max $100K for individuals — well under cap)
-- Keep Apple receipt — store with 2026 tax documents
-- Business purpose memo: "MacBook Air — purchased for Homebase consulting work, May 2026"
-- Trade-in of old MacBook Air: personal asset (no prior CCA claimed) — no tax event on disposal; new purchase cost is the only relevant figure
+- Keep receipt — store with 2026 tax documents
+- Business purpose memo (update date on purchase): *"MacBook Air M5 — [X]% business use for Homebase consulting (T4A). Personal M1 replaced. M4 Air remains primary MaintainX work machine."*
+- Trade-in of old M1 MacBook Air: personal asset (no prior CCA claimed) — no tax event on disposal
 - HST not claimable as ITC — under $30K small supplier threshold, no HST number
 
 ---
 
-*Prepared: 2026-05-12 | Updated: 2026-05-15*
+*Prepared: 2026-05-12 | Updated: 2026-05-24*
