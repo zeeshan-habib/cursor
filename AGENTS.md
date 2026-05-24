@@ -2,6 +2,12 @@
 
 Primary repo: `zeeshan-habib/cursor`. Cross-session memory lives in `.cursor/memory/MEMORY.md`.
 
+## Cursor Cloud Agent Notes
+
+This repo is Zee's personal AI system (portfolio, coaching, career, side-hustle, lifestyle context) — not application code. There are no services, build steps, lint checks, or tests to run. Read this file and the relevant domain `CLAUDE.md` index before acting. Financial data: use Python scripts in `investments/playbook.md` first.
+
+---
+
 ## Coaching Context
 Before any coaching, life planning, or personal development discussion, read `me/coaching.md`. It contains:
 - Zee's full $1M by 40 financial plan with correct account balances
