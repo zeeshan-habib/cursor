@@ -30,17 +30,35 @@
 </plist>
 
 <!--
-INSTALL (one-time):
+INSTALL (one-time) — run from repo root (cursor/):
 
-  cp /Users/zeeshanhabib/cursor/agents/spousal-pr-agent/com.spousal-pr.weekly.plist ~/Library/LaunchAgents/
-  launchctl load ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
+  mkdir -p ~/Library/LaunchAgents
+  cp agents/spousal-pr-agent/com.spousal-pr.weekly.plist ~/Library/LaunchAgents/
+  launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
+
+Verify:
+
+  launchctl list | grep spousal
 
 Test manually:
 
-  bash /Users/zeeshanhabib/cursor/agents/spousal-pr-agent/run.sh
+  cd /Users/zeeshanhabib/cursor
+  FORCE_RUN=1 bash agents/spousal-pr-agent/run.sh
+
+Reinstall (after editing plist):
+
+  launchctl bootout gui/$(id -u)/com.spousal-pr.weekly
+  cp agents/spousal-pr-agent/com.spousal-pr.weekly.plist ~/Library/LaunchAgents/
+  launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
 
 Uninstall:
 
-  launchctl unload ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
+  launchctl bootout gui/$(id -u)/com.spousal-pr.weekly
   rm ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
+
+TROUBLESHOOTING:
+  - cp: No such file or directory → mkdir -p ~/Library/LaunchAgents first
+  - Bootstrap failed: 5 → already loaded; check launchctl list
+
+Full docs: agents/CLAUDE.md
 -->

@@ -33,19 +33,36 @@
 </plist>
 
 <!--
-INSTALL (one-time):
+INSTALL (one-time) — run from repo root (cursor/):
 
-  cp /Users/zeeshanhabib/cursor/agents/portfolio-agent/com.portfolio.surveillance.plist ~/Library/LaunchAgents/
-  launchctl load ~/Library/LaunchAgents/com.portfolio.surveillance.plist
+  mkdir -p ~/Library/LaunchAgents
+  cp agents/portfolio-agent/com.portfolio.surveillance.plist ~/Library/LaunchAgents/
+  launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.portfolio.surveillance.plist
+
+Verify:
+
+  launchctl list | grep portfolio
 
 Test manually:
 
-  bash /Users/zeeshanhabib/cursor/agents/portfolio-agent/run.sh
+  cd /Users/zeeshanhabib/cursor
+  FORCE_RUN=1 bash agents/portfolio-agent/run.sh
+
+Reinstall (after editing plist):
+
+  launchctl bootout gui/$(id -u)/com.portfolio.surveillance
+  cp agents/portfolio-agent/com.portfolio.surveillance.plist ~/Library/LaunchAgents/
+  launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.portfolio.surveillance.plist
 
 Uninstall:
 
-  launchctl unload ~/Library/LaunchAgents/com.portfolio.surveillance.plist
+  launchctl bootout gui/$(id -u)/com.portfolio.surveillance
   rm ~/Library/LaunchAgents/com.portfolio.surveillance.plist
 
+TROUBLESHOOTING:
+  - cp: No such file or directory → mkdir -p ~/Library/LaunchAgents first
+  - Bootstrap failed: 5 → already loaded; check launchctl list
+
 NOTE: Mac must be awake at 8:30am. If asleep, launchd runs when it wakes.
+Full docs: agents/CLAUDE.md
 -->

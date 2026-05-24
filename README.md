@@ -44,7 +44,7 @@ Open this repo in Cursor → **New Agent chat** → invoke by skill name:
 | **Investments — trade** | `@trade-idea` | — |
 | **Spousal PR (outland)** | `@spousal-pr` | Mon 9:00am weekly nudge → `agents/spousal-pr-agent/check-ins/` |
 
-**Install scheduled agents (one-time):**
+**Install scheduled agents (one-time)** — run from repo root:
 
 ```bash
 mkdir -p ~/Library/LaunchAgents
@@ -54,9 +54,18 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.portfolio.surveillan
 launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
 ```
 
-Run from repo root (`cursor/`). If `~/Library/LaunchAgents` doesn't exist, create it first with `mkdir -p`.
+**Verify:** `launchctl list | grep -E 'portfolio|spousal'` — both agents should appear.
 
-Test manually: `FORCE_RUN=1 bash agents/portfolio-agent/run.sh`
+**Test manually:**
+
+```bash
+FORCE_RUN=1 bash agents/portfolio-agent/run.sh
+FORCE_RUN=1 bash agents/spousal-pr-agent/run.sh
+```
+
+**Common errors:** `No such file or directory` on `cp` → run `mkdir -p ~/Library/LaunchAgents` first. `Bootstrap failed: 5` → agent already loaded; verify with `launchctl list` — no action needed.
+
+Full install, reinstall, and uninstall steps: `agents/CLAUDE.md`.
 
 ---
 
