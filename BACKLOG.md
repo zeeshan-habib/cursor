@@ -10,7 +10,7 @@ Pick up any of these in a fresh session. Check items off as they're done and pus
 - [x] **Buy NTR.TO** — executed 2026-05-11. 40.9805 shares at $97.97 CAD avg in TFSA. Stop: $84.00 CAD.
 - [x] **Buy ABX.TO** — executed 2026-05-11. 100 shares at $60.50 CAD in TFSA. Stop: $54.45 CAD.
 - [x] **Draw $4,000 from PLOC + buy LLY** — executed 2026-05-11. 3 shares LLY at $964.98 USD in Non-Reg. Stop: $850 USD. PLOC balance: $6,007.80 CAD used.
-- [ ] **Update `thresholds.json`** — add actual entry prices for ABX, NTR, and LLY after fills.
+- [x] **Update `thresholds.json`** — NTR, ABX, LLY entries updated 2026-05-24.
 
 ### Portfolio Review — May 13, 2026
 Buy recommendations (~$1,000 CAD budget each account):
@@ -34,7 +34,9 @@ Flags from May 13 review:
 - [ ] **MSFT Bear Put Spread** — take profit at $10.35 (50% gain). Price alert set at MSFT $435 for stop.
 
 ### Tooling / Skills
-- [x] **Install surveillance agent** — installed and tested May 8 2026. Runs Mon–Fri 8:30am ET. Briefings at ~/portfolio-agent/briefings/YYYY-MM-DD.md.
+- [x] **Install surveillance agent** — installed and tested May 8 2026. Runs Mon–Fri 8:30am ET. Briefings at `agents/portfolio-agent/briefings/YYYY-MM-DD.md`.
+- [x] **Fix surveillance agent paths** — repo-relative paths, thresholds.json, plist for zeeshanhabib (2026-05-24).
+- [ ] **Re-install launchd plists** — copy from repo and `launchctl load` both portfolio + spousal PR agents.
 - [ ] **Build `/deep-research` skill** — 5 parallel subagents (Fundamentals, Technicals, Sentiment, Competitive, Risk) synthesized into a single decision memo. More rigorous than `/investment-committee`. Use for any new position > $3,000.
 - [ ] **Build backtesting loop** — reads past session recommendations, fetches historical returns, identifies systematic errors (currency mix-ups, premature stops), rewrites portfolio-review skill with corrective heuristics. Run monthly.
 - [x] **Per-ticker investment thesis in memory** — documented May 8 2026. All 15 positions with thesis, exit signals, and concerns.
@@ -68,8 +70,15 @@ Flags from May 13 review:
 
 ### Phase 1 — Week of May 9, 2026
 - [x] **Phone on work desk at night** — committed May 9. Shared apartment means no kitchen option; desk is the anchor.
-- [ ] **Spousal visa** — documents ready May 10; submit when complete. (Note: EQ Bank 2.75% is the real rate — not a promo issue. Cash placement is already optimal.)
+- [ ] **Spousal visa (outland)** — use `@spousal-pr` skill; tracker at `immigration/application-status.md`. Submit when complete.
 - [ ] **Book ADHD assessment** — $500. Committed May 9 2026.
+
+### Immigration — Outland Spousal PR
+- [x] **Create `@spousal-pr` skill + `immigration/` folder** — 2026-05-24
+- [x] **Weekly accountability agent** — `agents/spousal-pr-agent/` Mon 9am ET
+- [ ] **Audit documents vs IMM 5533** — first `@spousal-pr` session: confirm what's actually ready
+- [ ] **Complete IMM 5532 relationship narrative** — highest-effort sponsor form
+- [ ] **Submit application** — target date TBD after audit
 
 ### Phase 2 — After Phase 1 holds
 - [ ] **Desk by 8am** — one morning anchor, nothing else added yet.

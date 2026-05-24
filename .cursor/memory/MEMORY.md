@@ -19,4 +19,5 @@
 - [GitHub: Use gh CLI, not MCP](feedback_github_cli.md) — GitHub MCP has persistent auth failures; always use gh CLI via Bash instead
 - [Primary Cursor Repo](project_cursor_repo.md) — zeeshan-habib/cursor is the default repo; GitHub-first workflow — commit and push after file changes unless Zee opts out
 - [Parents Care Plan](project_parents_care.md) — Parents in rural Odisha, self-sufficient (pension + military hospital); Zee is backstop not primary funder; plan at lifestyle/parents/parent-care-plan.md
+- [Outland Spousal PR](project_spousal_pr.md) — Wife in India; outland stream; `@spousal-pr` skill + immigration/ tracker; weekly accountability agent Mon 9am
 - [MSHR Domain Build](project_mshr_domain.md) — Main Street Health Report context repo; staging in zeeshan-habib/cursor/homebase/, transfer to pioneerworks/homebase-context when done; PR #69 open; metrics + tables coming next

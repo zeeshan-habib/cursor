@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/administrator/agents/portfolio-agent/run.sh</string>
+        <string>/Users/zeeshanhabib/cursor/agents/portfolio-agent/run.sh</string>
     </array>
 
     <!-- Runs Mon-Fri at 8:30am local time (Toronto ET) -->
@@ -22,10 +22,10 @@
     </array>
 
     <key>StandardOutPath</key>
-    <string>/Users/administrator/agents/portfolio-agent/briefings/launchd.log</string>
+    <string>/Users/zeeshanhabib/cursor/agents/portfolio-agent/briefings/launchd.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Users/administrator/agents/portfolio-agent/briefings/launchd.log</string>
+    <string>/Users/zeeshanhabib/cursor/agents/portfolio-agent/briefings/launchd.log</string>
 
     <key>RunAtLoad</key>
     <false/>
@@ -33,19 +33,19 @@
 </plist>
 
 <!--
-INSTALL INSTRUCTIONS (one-time setup):
-Run these two commands in your terminal:
+INSTALL (one-time):
 
-  cp ~/agents/portfolio-agent/com.portfolio.surveillance.plist ~/Library/LaunchAgents/
+  cp /Users/zeeshanhabib/cursor/agents/portfolio-agent/com.portfolio.surveillance.plist ~/Library/LaunchAgents/
   launchctl load ~/Library/LaunchAgents/com.portfolio.surveillance.plist
 
-To test it manually right now (without waiting for 8:30am):
-  bash ~/agents/portfolio-agent/run.sh
+Test manually:
 
-To uninstall:
+  bash /Users/zeeshanhabib/cursor/agents/portfolio-agent/run.sh
+
+Uninstall:
+
   launchctl unload ~/Library/LaunchAgents/com.portfolio.surveillance.plist
   rm ~/Library/LaunchAgents/com.portfolio.surveillance.plist
 
-NOTE: Your Mac must be awake at 8:30am for launchd to fire.
-If it's asleep, the job runs as soon as it wakes up that day.
+NOTE: Mac must be awake at 8:30am. If asleep, launchd runs when it wakes.
 -->

@@ -26,6 +26,7 @@ Before any coaching, life planning, or personal development discussion, read `me
 | Career | `career/` | MaintainX role, job strategy, LinkedIn, promotion |
 | Homebase work | `homebase/` | Homebase consulting, MSHR domain questions |
 | Side hustle | `side-hustle/` | CAEDUNIT, POD business, freelance tax |
+| Immigration | `immigration/` | Outland spousal PR — forms, checklist, application status |
 | Lifestyle | `lifestyle/` | Travel rewards, fashion/wardrobe, parents |
 | Automation | `agents/` | Surveillance agent, MCP servers |
 

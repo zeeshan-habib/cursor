@@ -12,9 +12,10 @@ Migrated from [zeeshan-habib/claude](https://github.com/zeeshan-habib/claude) on
 | `career/` | Professional context | `maintainx.md` — current role + 90-day plan; `background.md` — skills + history |
 | `investments/` | Portfolio + trading | `playbook.md` — investor rules + Python scripts; `portfolio.csv` — live holdings; `theses.md` — per-position WHY |
 | `homebase/` | Consulting work context | `domains/mshr/` — Main Street Health Report; `global/` — Homebase business overview |
-| `side-hustle/` | CAEDUNIT + POD business | `CAEDUNIT-financials.md` — corp tax + consulting income; `pod-business.md` — Shopify portrait store |
+| `side-hustle/` | CAEDUNIT + POD business | `CAEDUNIT-financials.md` — corp tax + consulting income; `pod-business.md` — Shopify portrait store; `shopify-stores.md` — store registry |
+| `immigration/` | Outland spousal PR | `application-status.md` — live tracker; `spousal-pr-checklist.md` — forms + docs; `@spousal-pr` skill |
 | `lifestyle/` | Fashion, travel, family | `travel.md` — points strategy; `wardrobe.csv` — inventory; `parents/` — care plan |
-| `agents/` | Automation | `portfolio-agent/` — weekday pre-market surveillance (8:30am ET) |
+| `agents/` | Automation | `portfolio-agent/` — weekday surveillance; `spousal-pr-agent/` — weekly PR nudge |
 | `.cursor/` | Cursor behavior | `skills/` — project skills; `memory/` — cross-session memory; `rules/` — always-on rules |
 
 **Every folder has a `CLAUDE.md`** — open that first. It tells you what's inside and when to load each file.
@@ -33,6 +34,29 @@ Once open, new Agent chats inherit this repo as workspace context.
 
 ---
 
+## One-Click Agents
+
+Open this repo in Cursor → **New Agent chat** → invoke by skill name:
+
+| Domain | One-click | Scheduled automation |
+|---|---|---|
+| **Investments — full review** | `@portfolio-review` | Mon–Fri 8:30am ET surveillance → `agents/portfolio-agent/briefings/` |
+| **Investments — trade** | `@trade-idea` | — |
+| **Spousal PR (outland)** | `@spousal-pr` | Mon 9:00am weekly nudge → `agents/spousal-pr-agent/check-ins/` |
+
+**Install scheduled agents (one-time):**
+
+```bash
+cp agents/portfolio-agent/com.portfolio.surveillance.plist ~/Library/LaunchAgents/
+cp agents/spousal-pr-agent/com.spousal-pr.weekly.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.portfolio.surveillance.plist
+launchctl load ~/Library/LaunchAgents/com.spousal-pr.weekly.plist
+```
+
+Test manually: `FORCE_RUN=1 bash agents/portfolio-agent/run.sh`
+
+---
+
 ## Project Skills
 
 Invoke by name in chat (e.g. "run portfolio-review skill"):
@@ -42,6 +66,7 @@ Invoke by name in chat (e.g. "run portfolio-review skill"):
 | `portfolio-review` | Full portfolio review across all 4 accounts |
 | `trade-idea` | Structured trade recommendation for a ticker |
 | `investment-committee` | 4-strategy parallel analysis + consensus matrix |
+| `spousal-pr` | Outland spousal sponsorship — forms, checklist, accountability |
 | `career-coach` | Career strategy, comp, LinkedIn, promotion path |
 | `fashion-stylist` | Outfit recommendations from style profile + wardrobe |
 | `commit` | End-of-session git commit workflow |

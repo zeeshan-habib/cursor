@@ -46,17 +46,28 @@
 !lifestyle
 !lifestyle/**
 
+# --- immigration/ ---
+!immigration
+!immigration/**
+
 # --- agents/ (automation) ---
 !agents
 agents/*
+!agents/CLAUDE.md
 !agents/portfolio-agent
 agents/portfolio-agent/*
 !agents/portfolio-agent/run.sh
 !agents/portfolio-agent/prompt-template.txt
 !agents/portfolio-agent/thresholds.json
 !agents/portfolio-agent/com.portfolio.surveillance.plist
+!agents/spousal-pr-agent
+agents/spousal-pr-agent/*
+!agents/spousal-pr-agent/run.sh
+!agents/spousal-pr-agent/prompt-template.txt
+!agents/spousal-pr-agent/com.spousal-pr.weekly.plist
 !agents/sync-cursor-memory.sh
-# Never commit briefings (contain live financial data)
+# Never commit briefings or check-ins (may contain personal/financial notes)
 agents/portfolio-agent/briefings/
+agents/spousal-pr-agent/check-ins/
 !agents/gelato-mcp
 !agents/gelato-mcp/**
