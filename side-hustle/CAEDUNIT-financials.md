@@ -105,13 +105,33 @@ Zee transferred a total of $770 into the corporation over three fiscal years. Th
 
 **Status:** Waiting for deal — do not buy at Apple.ca list price unless urgent.
 
+**Goal:** One consolidated personal device after selling both M1 machines. M5 is the side-hustle + Homebase machine now; becomes the sole non-MaintainX device once M1s are sold.
+
+**Device allocation:**
+
+| Machine | Role | Timeline |
+|---|---|---|
+| **M4 MacBook Air** | MaintainX day job only | Keep — no change |
+| **M1 MacBook Air** | Personal use | Sell after M5 arrives |
+| **M1 MacBook Pro** | (legacy personal) | Sell after M5 arrives |
+| **M5 MacBook Air** | Side hustle + Homebase consulting (CAEDUNIT, T4A work) | Buy when deal available |
+
+**End state (post-sale):** M4 = employer work · M5 = personal + side hustle. Two machines total.
+
+**Funding plan — sell M1 Air + M1 Pro to offset M5 cost:**
+
+| Item | Est. proceeds (verify at sale) |
+|---|---|
+| M1 MacBook Air (2020) | ~$350–500 |
+| M1 MacBook Pro | ~$450–700 |
+| **Combined resale (rough)** | **~$800–1,200** |
+
 | Field | Detail |
 |---|---|
 | **Target config** | 13-inch MacBook Air M5, 16 GB RAM, 512 GB SSD |
-| **Replacing** | Personal M1 MacBook Air (2020) — functional, not urgent |
-| **Work machine** | M4 MacBook Air (MaintainX) — separate; no upgrade needed |
 | **Target pre-tax price** | **≤ $1,399** ($100+ off list) |
 | **List price (Apple.ca)** | $1,499 + 13% HST = **~$1,694** total |
+| **Net cost after M1 sales (est.)** | **~$500–900** all-in (before tax deduction + card cashback) |
 | **Hard deadline** | **July 31, 2026** — reassess if no deal by then |
 | **Watch window** | Late June – mid-July (back-to-school, Amazon Prime Day) |
 
@@ -138,6 +158,8 @@ Zee transferred a total of $770 into the corporation over three fiscal years. Th
 - [ ] Save receipt + confirmation email to 2026 tax folder
 - [ ] Write business-use memo on purchase date (see tax section below)
 - [ ] Update this tracker with actual purchase date, price, and card used
+- [ ] After M5 setup: list M1 Air + M1 Pro (Apple Trade-In, Facebook Marketplace, or Swappa — compare net proceeds)
+- [ ] Wipe both M1 machines before sale (Sign Out iCloud, erase, reinstall macOS)
 
 ---
 
@@ -146,6 +168,8 @@ Zee transferred a total of $770 into the corporation over three fiscal years. Th
 **MacBook Air Upgrade — Business Equipment Deduction**
 
 Purchase must occur in **calendar year 2026** to offset 2026 T4A income on T2125 (filed spring 2027). No rush — any 2026 purchase date works.
+
+**Device logic for CRA:** M4 is employer-dedicated (MaintainX). M5 is purchased for side-hustle and Homebase consulting. M1 Air handles personal use until sold. This separation supports a **higher business-use %** than a personal-upgrade purchase.
 
 **Estimated at Apple list price ($1,499 pre-tax):**
 
@@ -156,36 +180,35 @@ Purchase must occur in **calendar year 2026** to offset 2026 T4A income on T2125
 | **Total capital cost** | **~$1,694 CAD** |
 | CCA Class | Class 50 (computers, 55% rate) |
 | Filing method | Immediate expensing election — full business-use portion in year 1 |
+| **Recommended business use %** | **70–80%** — M5 dedicated to side hustle/Homebase; M4 covers employer work; M1 covers personal until sold |
 
 **Business use % — claim honestly:**
 
-Dedicated M4 Air covers MaintainX work. This M5 replaces personal M1. CRA expects **actual use**, not maximum allocation.
-
 | Scenario | Business use % | Deductible (on $1,499) | Tax savings (~32%) |
 |---|---|---|---|
-| Mostly personal; occasional Homebase | **20–30%** | ~$300–450 | ~$96–144 |
-| Split personal + regular Homebase consulting | **40–50%** | ~$600–750 | ~$192–240 |
-| Primarily Homebase machine (aggressive — document heavily) | **80%** | ~$1,199 | ~$384 |
+| M5 shared personal + side hustle (post M1 sale) | **50–60%** | ~$750–900 | ~$240–288 |
+| **M5 dedicated side hustle; M1 still personal (purchase → sale)** | **70–80%** | ~$1,050–1,199 | ~$336–384 |
+| M5 used exclusively for Homebase/CAEDUNIT | **90%+** | ~$1,349+ | ~$432+ |
 
-**Net income illustration (at 30% business use, list price, ~$1,300 T4A income):**
+**Net cost illustration (70% business use, Amazon deal, M1 resale, ~$1,300 T4A income):**
 
 | Item | Amount |
 |---|---|
-| Gross T4A income | $1,300.00 |
-| MacBook Air deduction (30%) | -$450.00 |
-| Net self-employment income | ~$850.00 |
-| Estimated tax + CPP (~32%) | ~$272.00 |
-| MBNA cashback (~2.5% on ~$1,582 Amazon) | -~$40.00 |
-| **Effective after-tax laptop cost** | **~$1,382** |
+| M5 purchase (Amazon ~$1,582 incl. HST) | $1,582 |
+| MBNA cashback (~2.5%) | -$40 |
+| M1 Air + M1 Pro resale (mid-estimate) | -$1,000 |
+| MacBook deduction (70%) | -$1,049 *(reduces tax, not purchase price directly)* |
+| Tax + CPP savings on deduction (~32%) | -~$336 |
+| **Effective out-of-pocket (est.)** | **~$200–250** |
 
-> Tax break is a sweetener, not the primary reason to buy. Do not inflate business % beyond defensible actual use.
+> M1 sale proceeds are personal — not taxable (used personal property). Tax deduction applies to the M5 business-use portion only. Keep a simple log of hours: Homebase/CAEDUNIT vs personal on M5 after M1s are sold.
 
 **Filing notes:**
 - File T2125 (Statement of Business or Professional Activities) with 2026 T1 return
 - Claim laptop under CCA Class 50 with immediate expensing (max $100K for individuals — well under cap)
 - Keep receipt — store with 2026 tax documents
-- Business purpose memo (update date on purchase): *"MacBook Air M5 — [X]% business use for Homebase consulting (T4A). Personal M1 replaced. M4 Air remains primary MaintainX work machine."*
-- Trade-in of old M1 MacBook Air: personal asset (no prior CCA claimed) — no tax event on disposal
+- Business purpose memo (update date on purchase): *"MacBook Air M5 — [70–80]% business use for Homebase consulting and CAEDUNIT side hustle. M4 Air dedicated to employer (MaintainX). M1 Air retained for personal use until sold."*
+- Trade-in/sale of M1 Air + M1 Pro: personal assets — no prior CCA claimed; sale proceeds not business income
 - HST not claimable as ITC — under $30K small supplier threshold, no HST number
 
 ---
