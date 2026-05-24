@@ -1,0 +1,46 @@
+{
+  "stop_losses": {
+    "NTR.TO": {
+      "stop": 84.00,
+      "entry": 93.49,
+      "target_mean": 106.17,
+      "currency": "CAD",
+      "account": "TFSA",
+      "set_date": "2026-05-08"
+    },
+    "ABX.TO": {
+      "stop": null,
+      "stop_pct_below_entry": 0.10,
+      "stop_floor": 52.00,
+      "entry": null,
+      "target_mean": 72.40,
+      "currency": "CAD",
+      "account": "TFSA",
+      "note": "Entry and stop TBD after May 12 post-earnings buy",
+      "set_date": "2026-05-08"
+    }
+  },
+    "LLY": {
+      "stop": 850.00,
+      "stop_pct_below_entry": 0.105,
+      "entry": null,
+      "target_mean": 1255.00,
+      "target_high": 1400.00,
+      "currency": "USD",
+      "account": "Non-Registered",
+      "funded_by": "PLOC",
+      "shares_approx": 3,
+      "cad_amount": 4000,
+      "note": "Entry TBD after Monday PLOC draw. Stop = $850 USD (below $870 analyst low target). Update entry after fill.",
+      "set_date": "2026-05-10"
+    }
+  },
+  "ploc": {
+    "rate": 0.0445,
+    "effective_rate_after_tax": 0.0209,
+    "target_max_drawn": 6000,
+    "currency": "CAD",
+    "note": "Keep drawn amount <= 50% of current limit at all times. Update balance after each draw or repayment."
+  },
+  "notes": "Update entry and stop for ABX.TO after buying on May 12. Stop = max(entry * 0.90, 52.00). Update LLY entry after Monday fill."
+}

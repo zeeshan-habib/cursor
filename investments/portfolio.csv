@@ -1,0 +1,18 @@
+Symbol,Shares,AvgCostBasis,Currency,Sector,DateBought,Account,Notes,LastPrice,LastPriceDate
+RY,32.5136,196.83,CAD,Financials,2026-01-01,RRSP,Royal Bank of Canada,246.83,2026-05-13
+TRP,17,85.32,CAD,Energy,2026-02-23,RRSP,TC Energy Corp,91.98,2026-05-13
+SCHD,100,31.69,USD,ETF-Dividend,2026-02-26,RRSP,Schwab US Dividend Equity ETF,31.75,2026-05-13
+VT,107,139.42,USD,ETF-Global,2026-03-19,RRSP,Vanguard Total World Stock ETF,155.40,2026-05-13
+GOOG,29,342.82,USD,Communication,2026-01-01,TFSA,Alphabet Inc,399.04,2026-05-13
+AMZN,36,251.75,USD,Consumer/Cloud,2026-04-13,TFSA,Amazon.com Inc,270.13,2026-05-13
+AVGO,12,420.00,USD,Semiconductors,2026-05-01,TFSA,Broadcom Inc,416.79,2026-05-13
+ABX,100,60.50,CAD,Materials,2026-05-11,TFSA,Barrick Mining Corp.,61.50,2026-05-13
+NTR,40.9805,97.97,CAD,Agriculture,2026-05-11,TFSA,Nutrien Limited,97.72,2026-05-13
+GLD,7,423.65,USD,Commodities,2026-05-11,TFSA,SPDR Gold Shares,430.50,2026-05-13
+AVGO,7,420.299,USD,Semiconductors,2026-05-01,Non-Registered,Broadcom Inc,416.79,2026-05-13
+LLY,3,964.98,USD,Healthcare,2026-05-11,Non-Registered,Eli Lilly and Co.,1015.75,2026-05-13
+AOM,56,48.93,USD,ETF-Balanced,2026-03-19,FHSA,iShares Core 40/60 Moderate ETF,49.43,2026-05-13
+ENB,24.6618,62.28,CAD,Energy,2026-01-01,FHSA,Enbridge Inc,75.72,2026-05-13
+POW,20,55.36,CAD,Financials,2026-01-01,FHSA,Power Corp of Canada,79.18,2026-05-13
+TD,30,126.13,CAD,Financials,2026-01-01,FHSA,Toronto-Dominion Bank,146.16,2026-05-13
+XBAL,428,34.16,CAD,ETF-Balanced,2026-01-01,FHSA,iShares Core Balanced ETF Portfolio,35.08,2026-05-13

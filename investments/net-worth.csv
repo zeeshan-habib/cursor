@@ -1,0 +1,13 @@
+Category,Item,Value,Currency,Notes,LastUpdated
+Assets - Investments,TFSA Portfolio,0,CAD,Pull from portfolio.csv,
+Assets - Investments,RRSP Portfolio,0,CAD,Pull from portfolio.csv,
+Assets - Investments,FHSA Portfolio,0,CAD,Pull from portfolio.csv,
+Assets - Investments,Non-Reg Portfolio,0,CAD,Pull from portfolio.csv,
+Assets - Cash,Chequing Account,0,CAD,,
+Assets - Cash,Savings Account,0,CAD,,
+Assets - Cash,Emergency Fund,0,CAD,,
+Assets - Other,CAEDUNIT INC. (corp),0,CAD,Dormant — nominal value,
+Liabilities - Credit,PLOC Balance,0,CAD,Current drawn amount — 4.45% interest,
+Liabilities - Credit,Credit Card Balances,0,CAD,Total across all 8 cards,
+Liabilities - Loans,Student Loan,0,CAD,,
+Liabilities - Other,Other,0,CAD,,

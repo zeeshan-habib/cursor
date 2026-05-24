@@ -1,0 +1,190 @@
+repo:
+  name: zeeshan-habib/cursor
+  owner: Zee Habib
+  purpose: >
+    Zee's personal AI system — persistent context, portfolio data, memory,
+    and skills for Cursor. Acts as a secondary self across sessions and
+    machines. Every domain folder has a CLAUDE.md index that tells an AI
+    what's inside and when to load each file.
+  last_updated: 2026-05-23
+
+# Navigation rule: open the CLAUDE.md in any folder before reading its files.
+# Root AGENTS.md = session rules, navigation map, tool fallback, model selection.
+
+domains:
+
+  me:
+    path: me/
+    purpose: Personal identity, life plan, finances, and discipline
+    load_when: Coaching, life planning, personal context, or financial snapshot questions
+    index: me/CLAUDE.md
+    files:
+      - path: me/coaching.md
+        purpose: $1M by 40 plan, phased discipline plan, recession prep, 3-point check-in protocol
+        load_when: Start of every coaching or life planning session
+        review_cadence: monthly
+      - path: me/identity.md
+        purpose: Personal profile — age, spouse, goals, physical stats, behavioral patterns, interests
+        load_when: Asked about who Zee is or his personal context
+        review_cadence: annual
+      - path: me/finances.md
+        purpose: Account balances, monthly budget, $1M math, PLOC details, EQ Bank notes
+        load_when: Net worth questions, savings capacity, budget, or cash flow discussions
+        review_cadence: monthly
+
+  career:
+    path: career/
+    purpose: Professional identity, current role, and growth strategy
+    load_when: MaintainX, career strategy, LinkedIn, promotion, or job market questions
+    index: career/CLAUDE.md
+    files:
+      - path: career/background.md
+        purpose: 8yr analytics background, skills stack, Homebase → MaintainX transition
+        load_when: Asked about Zee's expertise, skills, or professional history
+        review_cadence: annual
+      - path: career/maintainx.md
+        purpose: Current role details, comp, 90-day plan, Staff Analyst gap, LinkedIn status
+        load_when: MaintainX role, performance, promotion path, or internal positioning
+        review_cadence: quarterly
+
+  investments:
+    path: investments/
+    purpose: Portfolio data, investment playbook, per-position theses, Yahoo Finance scripts
+    load_when: Any portfolio, trade, or financial analysis question
+    index: investments/CLAUDE.md
+    note: Always load playbook.md at the start of every investment session
+    files:
+      - path: investments/playbook.md
+        purpose: >
+          Investor profile, portfolio conventions, Yahoo Finance Python scripts (5),
+          single-stock analysis framework, full portfolio review protocol, risk rules,
+          PLOC rules
+        load_when: Start of every investment session — required
+        review_cadence: quarterly
+      - path: investments/portfolio.csv
+        purpose: Live holdings across all accounts (RRSP, TFSA, FHSA, Non-Reg)
+        format: "Symbol, Shares, AvgCostBasis, Currency, Sector, DateBought, Account, Notes, LastPrice, LastPriceDate"
+        load_when: Fetching positions, calculating values, or reviewing account balances
+        review_cadence: per-trade
+      - path: investments/net-worth.csv
+        purpose: Total net worth tracker across all asset and liability categories
+        load_when: Net worth tracking or total financial picture questions
+        review_cadence: monthly
+      - path: investments/theses.md
+        purpose: Per-position investment thesis, exit signals, and concerns for all 17 positions
+        load_when: Asked why a position is held, exit signal, or whether to add/trim
+        review_cadence: monthly
+
+  homebase:
+    path: homebase/
+    purpose: Curated AI context for Zee's Homebase consulting engagement (3-layer architecture)
+    load_when: Homebase consulting work, MSHR domain questions, or metric definitions
+    index: homebase/CLAUDE.md
+    note: >
+      Three layers — global (business context) → domains (product knowledge) → data (metric definitions).
+      Canonical metric definitions live in data/ only; domain files reference, never define.
+    sub_folders:
+      - path: homebase/global/
+        purpose: Homebase business-level context — entity model, product tiers, OKRs
+        index: homebase/global/CLAUDE.md
+        files:
+          - path: homebase/global/business-overview.md
+            purpose: Entity model, product tiers, key terms (OAM, NHP, Engaged), quick reference
+            status: stub — populate from pioneerworks/homebase-context/global/
+      - path: homebase/domains/mshr/
+        purpose: Main Street Health Report domain — metrics, data model, customers, workflows
+        index: homebase/domains/mshr/CLAUDE.md
+      - path: homebase/data/
+        purpose: Canonical metric definitions, table schemas, SQL patterns
+    reference:
+      - path: homebase/homebase-context-structure.md
+        purpose: Full architecture reference for pioneerworks/homebase-context repo
+        load_when: Onboarding to the homebase context repo or setting up a new domain
+
+  side_hustle:
+    path: side-hustle/
+    purpose: CAEDUNIT INC. corporate finances and the Shopify POD business plan
+    load_when: CAEDUNIT taxes, consulting income, T2 filings, or Shopify business questions
+    index: side-hustle/CLAUDE.md
+    files:
+      - path: side-hustle/CAEDUNIT-financials.md
+        purpose: >
+          Corporate financials (FY2021–2026), T2 filing sequence, shareholder loans,
+          Homebase consulting contract (T4A, $100/hr), MacBook Air tax deduction
+        load_when: CAEDUNIT taxes, corporate filings, consulting income, or equipment deductions
+        review_cadence: quarterly
+      - path: side-hustle/pod-business.md
+        purpose: >
+          Ideogram V3 + Printful Shopify portrait business — products, workflow,
+          suppliers, unit economics, legal boundaries, rejected directions
+        load_when: POD business planning, Shopify strategy, or product questions
+        review_cadence: quarterly
+
+  lifestyle:
+    path: lifestyle/
+    purpose: Fashion, travel rewards, and family care context
+    load_when: Travel planning, fashion/wardrobe, points strategy, or parent care questions
+    index: lifestyle/CLAUDE.md
+    files:
+      - path: lifestyle/wardrobe.csv
+        purpose: Full wardrobe inventory with items, colors, fit, and condition
+        load_when: Outfit recommendations, what to buy next, or wardrobe gap analysis
+        review_cadence: quarterly
+      - path: lifestyle/travel.md
+        purpose: Points balances, India business class goal, card strategy, recent trips
+        load_when: Travel rewards, flight booking, points redemption, or credit card strategy
+        review_cadence: quarterly
+      - path: lifestyle/parents/parent-care-plan.md
+        purpose: Aging parents in rural Odisha — roles, funding, care layers, action items
+        load_when: Parent care responsibilities, family financial obligations
+        review_cadence: annual
+
+  agents:
+    path: agents/
+    purpose: Automation infrastructure — surveillance agent and MCP servers
+    load_when: Troubleshooting automation, updating thresholds, or MCP server questions
+    index: agents/CLAUDE.md
+    sub_folders:
+      - path: agents/portfolio-agent/
+        purpose: Weekday pre-market surveillance (Mon–Fri 8:30am ET)
+        files:
+          - path: agents/portfolio-agent/run.sh
+            purpose: Main surveillance script
+          - path: agents/portfolio-agent/prompt-template.txt
+            purpose: Surveillance prompt (references investments/portfolio.csv and investments/playbook.md)
+          - path: agents/portfolio-agent/thresholds.json
+            purpose: Stop-loss and target levels per position — update after every new trade
+          - path: agents/portfolio-agent/com.portfolio.surveillance.plist
+            purpose: launchd config for macOS scheduling
+      - path: agents/gelato-mcp/
+        purpose: Gelato print-on-demand API MCP server
+
+cursor_infrastructure:
+  path: .cursor/
+  purpose: Cursor behavior — rules, skills, memory. Do not modify without understanding the system.
+  sub_folders:
+    - path: .cursor/rules/
+      purpose: Always-on project rules (master-playbook.mdc)
+    - path: .cursor/skills/
+      purpose: Project skills — portfolio-review, trade-idea, investment-committee, career-coach, fashion-stylist, commit, investments
+    - path: .cursor/memory/
+      purpose: Cross-session memory files (indexed via MEMORY.md)
+      key_files:
+        - MEMORY.md — index of all memory files
+        - "user_*.md — personal profile, investor profile, fashion profile, life coaching"
+        - "feedback_*.md — behavioral corrections and validated approaches"
+        - "project_*.md — active project context (portfolio, career, CAEDUNIT, travel, options)"
+
+root_files:
+  - path: AGENTS.md
+    purpose: Master session rules — navigation map, personas, planning protocol, model selection, tool fallback
+    note: Auto-loaded by Cursor every session. Keep slim — domain details live in their folders.
+  - path: BACKLOG.md
+    purpose: Cross-domain task tracker — investment, career, fashion, life, business, personal finance
+    note: Check this at the start of any session to pick up where we left off
+  - path: README.md
+    purpose: Human-readable repo overview — about Zee, file structure, skills reference, setup instructions
+  - path: STYLE-GUIDE.md
+    purpose: Authoring rules for all files — format, front matter, file size targets, staleness protocol
+  - path: repo-map.yaml
+    purpose: This file — machine-readable map of every folder and file with load triggers and metadata

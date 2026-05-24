@@ -1,0 +1,62 @@
+# Whitelist-style gitignore for cursor repo
+# Default: ignore everything, then explicitly un-ignore what we want to track.
+
+/*
+/.*
+
+# --- Root files ---
+!AGENTS.md
+!BACKLOG.md
+!README.md
+!STYLE-GUIDE.md
+!repo-map.yaml
+!.gitignore
+
+# --- .cursor directory ---
+!.cursor
+.cursor/*
+!.cursor/rules
+!.cursor/rules/**
+!.cursor/skills
+!.cursor/skills/**
+!.cursor/memory
+!.cursor/memory/**
+
+# --- me/ (personal identity, life plan, finances) ---
+!me
+!me/**
+
+# --- career/ ---
+!career
+!career/**
+
+# --- investments/ ---
+!investments
+!investments/**
+
+# --- homebase/ (work context) ---
+!homebase
+!homebase/**
+
+# --- side-hustle/ ---
+!side-hustle
+!side-hustle/**
+
+# --- lifestyle/ (fashion, travel, parents) ---
+!lifestyle
+!lifestyle/**
+
+# --- agents/ (automation) ---
+!agents
+agents/*
+!agents/portfolio-agent
+agents/portfolio-agent/*
+!agents/portfolio-agent/run.sh
+!agents/portfolio-agent/prompt-template.txt
+!agents/portfolio-agent/thresholds.json
+!agents/portfolio-agent/com.portfolio.surveillance.plist
+!agents/sync-cursor-memory.sh
+# Never commit briefings (contain live financial data)
+agents/portfolio-agent/briefings/
+!agents/gelato-mcp
+!agents/gelato-mcp/**

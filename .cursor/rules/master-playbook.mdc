@@ -1,0 +1,18 @@
+---
+description: Zee's master AI playbook — navigation, personas, planning protocol, tool fallback
+alwaysApply: true
+---
+
+# Zee's AI System
+
+Read `AGENTS.md` at session start for full context. Primary repo: `zeeshan-habib/cursor`.
+
+**Quick navigation:** `investments/` for portfolio, `me/` for coaching, `career/` for MaintainX, `lifestyle/` for travel/fashion.
+
+**GitHub:** always use `gh` CLI, not GitHub MCP. **Commit and push after file changes** — Zee works primarily from GitHub; local-only updates are not acceptable unless he says otherwise.
+
+**Financial data:** Python scripts in `investments/playbook.md` first; never retry a failing MCP more than once.
+
+**Coaching sessions:** read `me/coaching.md` first.
+
+**Cross-session memory:** index at `.cursor/memory/MEMORY.md`.

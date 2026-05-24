@@ -1,0 +1,22 @@
+- [Investor Profile](user_investor_profile.md) — Growth investor, low risk, 15-20% target return, prefers diversification
+- [Fashion Style Profile](user_fashion_profile.md) — Apple body type, warm medium-brown skin, $50-150 budget, smart casual, monochromatic dark palette
+- [Portfolio Setup & Tools](project_portfolio_setup.md) — Portfolio file location, AGENTS.md playbook, portfolio-review skill, MCP servers configured
+- [Yahoo Finance: Use Python, not MCP](feedback_yahoo_finance_python.md) — Yahoo Finance MCP is unreliable; always use the Bash/Python script in investments/playbook.md instead
+- [Professional Background](user_professional_background.md) — Lead Analyst, 8+ yrs analytics; Homebase → MaintainX transition; SQL/Python/Databricks/attribution
+- [Personal Context](user_personal_context.md) — Toronto-based; spouse joining in ~12-16 months; interests: hiking, anime, Procreate, travel (Seoul Apr 2026, India annual goal)
+- [Canadian Financial Planning](project_financial_planning.md) — Tax modeling, home purchase (24-30mo), RRSP/FHSA/TFSA strategy, spouse arrival implications
+- [MaintainX Career Context](project_maintainx_career.md) — GTM Strategy role, Alex Cohen manager, 90-day plan, Staff Analyst gap, LinkedIn update needed
+- [Travel Rewards & Credit Cards](project_travel_rewards.md) — 8-card portfolio; Aeroplan for India biz class; TD First Class for Expedia; Seoul trip May 2026
+- [CAEDUNIT INC.](project_caedunit.md) — Dormant Ontario corp; plan to file nil T2s + relaunch as Ideogram V3/Printful Shopify store; store registry at side-hustle/shopify-stores.md
+- [Payroll Calculation Method](feedback_payroll_calculations.md) — Always use pay stub actuals per-paycheck; never annualized/projected deduction rates
+- [Coaching Persona & Planning Protocol](feedback_coaching_persona.md) — Coach/mentor role; push back on suboptimal choices; plan before executing complex tasks; cost-conscious model selection
+- [Model Selection & Token Hygiene](feedback_model_selection.md) — Haiku for quick lookups, Sonnet for reviews/execution, Opus for planning only; one task per session; Python-first for finance
+- [Brokerage Setup](project_brokerage_setup.md) — Wealthsimple for trading (commission-free); RBC Direct Investing for Morningstar research (free with account); never recommend paid Morningstar subscription
+- [Options Trading](project_options_trading.md) — Beginner, 1 lot at a time, non-reg on Wealthsimple; first trade: MSFT bear put spread $400/$380 Dec 18 2026, $690 cost; spreads preferred for budget control
+- [Investment Theses](project_investment_theses.md) — Per-position WHY, exit signals, and concerns for all 15 holdings including pending NTR/ABX buys and MSFT options
+- [Portfolio Review Output Format](feedback_portfolio_review_output.md) — 2 tables only, 1 line per holding, no verbose sections; RBC check once at end only
+- [Life Coaching Profile](user_life_coaching.md) — Physical stats, daily routine, behavioral patterns (avoidance, novelty-seeking, ADHD signal), success definition ($2M, home, wife settled)
+- [GitHub: Use gh CLI, not MCP](feedback_github_cli.md) — GitHub MCP has persistent auth failures; always use gh CLI via Bash instead
+- [Primary Cursor Repo](project_cursor_repo.md) — zeeshan-habib/cursor is the default repo; GitHub-first workflow — commit and push after file changes unless Zee opts out
+- [Parents Care Plan](project_parents_care.md) — Parents in rural Odisha, self-sufficient (pension + military hospital); Zee is backstop not primary funder; plan at lifestyle/parents/parent-care-plan.md
+- [MSHR Domain Build](project_mshr_domain.md) — Main Street Health Report context repo; staging in zeeshan-habib/cursor/homebase/, transfer to pioneerworks/homebase-context when done; PR #69 open; metrics + tables coming next
